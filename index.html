@@ -30,51 +30,37 @@
 
   body {
     font-family: 'Inter', sans-serif;
-    color: var(--text-primary);
-    background: var(--white);
-    line-height: 1.7;
-    font-weight: 400;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
+    color: var(--text-primary); background: var(--white);
+    line-height: 1.7; font-weight: 400;
+    overflow-x: hidden; -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, h5 {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.25;
-    font-weight: 600;
+    font-family: 'Poppins', sans-serif; line-height: 1.25; font-weight: 600;
   }
 
   a { text-decoration: none; color: inherit; }
   img { max-width: 100%; height: auto; display: block; }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 48px;
-  }
-
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
   section { padding: 100px 48px; }
 
   .section-label {
     font-family: 'Lexend Exa', sans-serif;
     font-size: 11px; font-weight: 500;
     letter-spacing: 2px; text-transform: uppercase;
-    color: var(--brand-accent);
-    margin-bottom: 12px; display: inline-block;
+    color: var(--brand-accent); margin-bottom: 12px; display: inline-block;
   }
 
   .section-title {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px; font-weight: 600;
-    text-transform: uppercase;
-    color: var(--brand-dark);
-    margin-bottom: 20px; letter-spacing: -0.5px;
+    font-size: 40px; font-weight: 600; text-transform: uppercase;
+    color: var(--brand-dark); margin-bottom: 20px; letter-spacing: -0.5px;
   }
 
   .section-subtitle {
     font-size: 17px; color: var(--text-secondary);
-    line-height: 1.75; max-width: 680px;
-    margin-bottom: 48px;
+    line-height: 1.75; max-width: 680px; margin-bottom: 48px;
   }
 
   .fade-up {
@@ -89,9 +75,8 @@
 
   /* ── NAV ─────────────────────────────────────── */
   nav {
-    position: fixed; top: 0; left: 0; right: 0;
-    z-index: 100; background: var(--brand-dark);
-    padding: 0 48px; height: 72px;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: var(--brand-dark); padding: 0 48px; height: 72px;
     display: flex; align-items: center;
     box-shadow: 0 2px 20px rgba(0,0,0,0.3);
   }
@@ -101,9 +86,7 @@
     display: flex; align-items: center; justify-content: space-between;
   }
 
-  .nav-logo {
-    display: flex; align-items: center; gap: 12px; text-decoration: none;
-  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
 
   .nav-logo-icon {
     width: 36px; height: 36px; background: var(--white);
@@ -113,8 +96,7 @@
 
   .nav-logo-text {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700; font-size: 17px;
-    color: var(--white); letter-spacing: -0.3px;
+    font-weight: 700; font-size: 17px; color: var(--white); letter-spacing: -0.3px;
   }
 
   .nav-links {
@@ -125,8 +107,7 @@
     color: rgba(255,255,255,0.75); text-decoration: none;
     font-family: 'Lexend Exa', sans-serif;
     font-size: 11px; font-weight: 500;
-    letter-spacing: 1.5px; text-transform: uppercase;
-    transition: color 0.2s;
+    letter-spacing: 1.5px; text-transform: uppercase; transition: color 0.2s;
   }
   .nav-links a:hover { color: var(--white); }
 
@@ -135,10 +116,7 @@
     padding: 10px 24px; border-radius: 6px; font-weight: 600 !important;
     transition: transform 0.2s, box-shadow 0.2s !important;
   }
-  .nav-cta:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
-  }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(255,255,255,0.2); }
 
   .nav-hamburger {
     display: none; flex-direction: column; gap: 5px;
@@ -188,8 +166,7 @@
     border-radius: 100px; padding: 6px 18px; margin-bottom: 28px;
     font-family: 'Lexend Exa', sans-serif;
     font-size: 10px; font-weight: 500;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 1.5px; text-transform: uppercase;
+    color: rgba(255,255,255,0.6); letter-spacing: 1.5px; text-transform: uppercase;
   }
   .hero-badge svg { width: 12px; height: 12px; stroke: rgba(255,255,255,0.5); flex-shrink: 0; }
 
@@ -219,16 +196,6 @@
   .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
   .btn-primary svg { width: 18px; height: 18px; }
 
-  .btn-outline {
-    display: inline-flex; align-items: center; gap: 10px;
-    padding: 16px 32px; background: transparent; color: var(--white);
-    border: 2px solid rgba(255,255,255,0.2); border-radius: 8px;
-    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 600;
-    text-decoration: none; cursor: pointer; transition: all 0.2s;
-  }
-  .btn-outline:hover { border-color: rgba(255,255,255,0.4); transform: translateY(-2px); }
-  .btn-outline svg { width: 18px; height: 18px; }
-
   .hero-photo {
     background: rgba(255,255,255,0.04); border-radius: 16px;
     border: 1px solid rgba(255,255,255,0.06);
@@ -245,9 +212,7 @@
     pointer-events: none;
   }
 
-  .photo-placeholder {
-    display: flex; flex-direction: column; align-items: center; gap: 12px;
-  }
+  .photo-placeholder { display: flex; flex-direction: column; align-items: center; gap: 12px; }
   .photo-placeholder svg { width: 32px; height: 32px; opacity: 0.4; }
 
   /* ── TRUST BAR ──────────────────────────────── */
@@ -309,9 +274,8 @@
 
   .res-label {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px; font-weight: 700;
-    text-transform: uppercase; color: var(--brand-dark);
-    margin-bottom: 8px; letter-spacing: -0.5px;
+    font-size: 40px; font-weight: 700; text-transform: uppercase;
+    color: var(--brand-dark); margin-bottom: 8px; letter-spacing: -0.5px;
   }
 
   .res-subtitle {
@@ -325,6 +289,46 @@
     line-height: 1.75; max-width: 680px; margin-bottom: 48px;
   }
 
+  /* Featured service card */
+  .featured-service {
+    background: var(--white); border: 2px solid var(--brand-dark);
+    border-radius: 14px; padding: 48px 40px;
+    display: grid; grid-template-columns: auto 1fr; gap: 32px;
+    align-items: center; margin-bottom: 24px;
+    position: relative; overflow: hidden;
+  }
+
+  .featured-service::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 4px; background: var(--brand-dark);
+  }
+
+  .featured-badge {
+    position: absolute; top: 16px; right: 20px;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 9px; font-weight: 500;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 4px 14px; border-radius: 100px;
+    background: var(--brand-dark); color: var(--white);
+  }
+
+  .featured-icon {
+    width: 72px; height: 72px; background: var(--light-bg);
+    border-radius: 16px; display: flex; align-items: center; justify-content: center;
+  }
+  .featured-icon svg {
+    width: 36px; height: 36px; stroke: var(--brand-dark);
+    fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
+  }
+
+  .featured-content h3 {
+    font-size: 22px; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px;
+  }
+
+  .featured-content p {
+    font-size: 15px; color: var(--text-secondary); line-height: 1.75; max-width: 520px;
+  }
+
   .services-grid {
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
   }
@@ -333,8 +337,7 @@
     background: var(--white); border: 1px solid var(--border-light);
     border-radius: 12px; padding: 36px 28px;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-    position: relative; overflow: hidden;
-    text-align: center;
+    position: relative; overflow: hidden; text-align: center;
   }
 
   .service-card::before {
@@ -360,22 +363,16 @@
     fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
   }
 
-  .service-card h3 {
-    font-size: 18px; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px;
-  }
-
-  .service-card p {
-    font-size: 14px; color: var(--text-secondary); line-height: 1.7;
-  }
+  .service-card h3 { font-size: 18px; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px; }
+  .service-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
 
   /* ── COMMERCIAL SERVICES ────────────────────── */
   .commercial-section { background: var(--white); }
 
   .comm-label {
     font-family: 'Poppins', sans-serif;
-    font-size: 40px; font-weight: 700;
-    text-transform: uppercase; color: var(--brand-dark);
-    margin-bottom: 8px; letter-spacing: -0.5px;
+    font-size: 40px; font-weight: 700; text-transform: uppercase;
+    color: var(--brand-dark); margin-bottom: 8px; letter-spacing: -0.5px;
   }
 
   .comm-subtitle {
@@ -389,13 +386,10 @@
   }
 
   .commercial-text p {
-    font-size: 16px; color: var(--text-secondary);
-    line-height: 1.85; margin-bottom: 20px;
+    font-size: 16px; color: var(--text-secondary); line-height: 1.85; margin-bottom: 20px;
   }
 
-  .commercial-services-list {
-    display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px;
-  }
+  .commercial-services-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 
   .commercial-tag {
     padding: 8px 18px; border-radius: 100px;
@@ -422,25 +416,19 @@
   /* ── WHY CHOOSE US — FLIP CARDS ─────────────── */
   .why-section { background: var(--light-bg); }
 
-  .why-cards {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
-  }
+  .why-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
 
-  .flip-card {
-    perspective: 800px; height: 220px;
-  }
+  .flip-card { perspective: 800px; height: 220px; }
 
   .flip-card-inner {
     position: relative; width: 100%; height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+    transition: transform 0.6s; transform-style: preserve-3d;
   }
 
   .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
 
   .flip-card-front, .flip-card-back {
-    position: absolute; inset: 0;
-    backface-visibility: hidden;
+    position: absolute; inset: 0; backface-visibility: hidden;
     border-radius: 12px; border: 1px solid var(--border-light);
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
@@ -451,8 +439,7 @@
 
   .flip-card-back {
     background: var(--brand-dark); color: var(--white);
-    transform: rotateY(180deg);
-    border-color: var(--brand-medium);
+    transform: rotateY(180deg); border-color: var(--brand-medium);
   }
 
   .flip-card-icon {
@@ -465,13 +452,36 @@
     fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
   }
 
-  .flip-card-front h3 {
-    font-size: 16px; font-weight: 700; color: var(--brand-dark);
+  .flip-card-front h3 { font-size: 16px; font-weight: 700; color: var(--brand-dark); }
+  .flip-card-back p { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.7; }
+
+  /* ── SERVICE AREA ────────────────────────────── */
+  .area-section { background: var(--light-bg); }
+
+  .area-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
   }
 
-  .flip-card-back p {
-    font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.7;
+  .area-map {
+    width: 100%; aspect-ratio: 4/3;
+    background: var(--white); border: 1px solid var(--border-color);
+    border-radius: 14px; display: flex; align-items: center; justify-content: center;
+    color: var(--text-hint); font-size: 14px; font-family: 'Poppins', sans-serif;
   }
+
+  .county-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+
+  .county-pill {
+    padding: 10px 20px; border-radius: 8px;
+    background: var(--white); border: 1px solid var(--border-color);
+    font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500;
+    color: var(--brand-dark); transition: all 0.2s;
+  }
+  .county-pill:hover {
+    background: var(--brand-dark); color: var(--white); border-color: var(--brand-dark);
+  }
+
+  .area-note { font-size: 14px; color: var(--text-muted); font-style: italic; line-height: 1.6; }
 
   /* ── PURPLE STANDARD SECTION ─────────────────── */
   .tps-section {
@@ -504,40 +514,7 @@
     fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;
   }
 
-  .tps-desc {
-    font-size: 17px; color: rgba(255,255,255,0.65); line-height: 1.8;
-  }
-
-  /* ── SERVICE AREA ────────────────────────────── */
-  .area-section { background: var(--light-bg); }
-
-  .area-grid {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
-  }
-
-  .area-map {
-    width: 100%; aspect-ratio: 4/3;
-    background: var(--white); border: 1px solid var(--border-color);
-    border-radius: 14px; display: flex; align-items: center; justify-content: center;
-    color: var(--text-hint); font-size: 14px; font-family: 'Poppins', sans-serif;
-  }
-
-  .county-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
-
-  .county-pill {
-    padding: 10px 20px; border-radius: 8px;
-    background: var(--white); border: 1px solid var(--border-color);
-    font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 500;
-    color: var(--brand-dark); transition: all 0.2s;
-  }
-  .county-pill:hover {
-    background: var(--brand-dark); color: var(--white); border-color: var(--brand-dark);
-  }
-
-  .area-note {
-    font-size: 14px; color: var(--text-muted);
-    font-style: italic; line-height: 1.6;
-  }
+  .tps-desc { font-size: 17px; color: rgba(255,255,255,0.65); line-height: 1.8; }
 
   /* ── CONTACT SECTION ─────────────────────────── */
   .contact-section { background: var(--white); }
@@ -546,9 +523,7 @@
     display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: start;
   }
 
-  .contact-copy h2 {
-    font-size: 28px; font-weight: 700; color: var(--brand-dark); margin-bottom: 8px;
-  }
+  .contact-copy h2 { font-size: 28px; font-weight: 700; color: var(--brand-dark); margin-bottom: 8px; }
 
   .contact-copy .copy-subtitle {
     font-family: 'Poppins', sans-serif;
@@ -557,13 +532,10 @@
   }
 
   .contact-copy > p {
-    font-size: 15px; color: var(--text-secondary);
-    line-height: 1.8; margin-bottom: 16px;
+    font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;
   }
 
-  .contact-details {
-    display: flex; flex-direction: column; gap: 14px; margin-top: 32px;
-  }
+  .contact-details { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
 
   .contact-detail-item {
     display: flex; align-items: center; gap: 14px;
@@ -572,14 +544,12 @@
     text-decoration: none; color: inherit; transition: all 0.2s;
   }
   .contact-detail-item:hover {
-    border-color: var(--brand-accent);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    border-color: var(--brand-accent); box-shadow: 0 4px 16px rgba(0,0,0,0.06);
   }
 
   .detail-icon {
     width: 40px; height: 40px; background: var(--brand-dark);
-    border-radius: 8px; display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0;
+    border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   }
   .detail-icon svg {
     width: 20px; height: 20px; stroke: var(--white);
@@ -597,17 +567,13 @@
 
   .contact-form-wrap {
     background: var(--white); border: 1px solid var(--border-color);
-    border-radius: 10px; overflow: hidden;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+    border-radius: 10px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.04);
   }
 
-  .form-header {
-    background: var(--brand-dark); padding: 24px 32px;
-  }
+  .form-header { background: var(--brand-dark); padding: 24px 32px; }
   .form-header h3 {
-    font-size: 20px; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 0.02em;
-    color: var(--white); margin-bottom: 4px;
+    font-size: 20px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.02em; color: var(--white); margin-bottom: 4px;
   }
   .form-header p { font-size: 13px; color: rgba(255,255,255,0.5); }
 
@@ -619,20 +585,17 @@
 
   .form-group label {
     font-family: 'Poppins', sans-serif;
-    font-size: 13px; font-weight: 600;
-    color: var(--brand-dark); margin-bottom: 6px;
+    font-size: 13px; font-weight: 600; color: var(--brand-dark); margin-bottom: 6px;
   }
   .required { color: #c62828; }
 
   .form-group input,
   .form-group textarea,
   .form-group select {
-    font-family: 'Inter', sans-serif;
-    font-size: 14px; color: var(--text-primary);
+    font-family: 'Inter', sans-serif; font-size: 14px; color: var(--text-primary);
     background: var(--light-bg); border: 1px solid var(--border-color);
     border-radius: 6px; padding: 11px 14px;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    outline: none; width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s; outline: none; width: 100%;
   }
   .form-group textarea { resize: vertical; min-height: 90px; }
 
@@ -643,28 +606,22 @@
     padding-right: 36px; cursor: pointer;
   }
 
-  .form-group input:focus,
-  .form-group textarea:focus,
-  .form-group select:focus {
-    border-color: var(--brand-medium);
-    box-shadow: 0 0 0 3px rgba(51,51,51,0.08);
+  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    border-color: var(--brand-medium); box-shadow: 0 0 0 3px rgba(51,51,51,0.08);
   }
 
-  .form-group input::placeholder,
-  .form-group textarea::placeholder { color: var(--text-hint); }
+  .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-hint); }
 
   .form-submit {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px; font-weight: 700;
+    font-family: 'Poppins', sans-serif; font-size: 15px; font-weight: 700;
     text-transform: uppercase; letter-spacing: 0.04em;
     color: var(--white); background: var(--brand-dark);
     padding: 14px 32px; border-radius: 6px;
     border: none; cursor: pointer; transition: all 0.25s; width: 100%;
   }
   .form-submit:hover {
-    background: var(--brand-medium);
-    transform: translateY(-1px);
+    background: var(--brand-medium); transform: translateY(-1px);
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
   }
   .form-submit svg {
@@ -680,8 +637,7 @@
 
   /* ── FOOTER ─────────────────────────────────── */
   footer {
-    background: var(--brand-dark); color: rgba(255,255,255,0.6);
-    padding: 64px 48px 32px;
+    background: var(--brand-dark); color: rgba(255,255,255,0.6); padding: 64px 48px 32px;
   }
 
   .footer-grid {
@@ -692,9 +648,7 @@
 
   .footer-brand p { font-size: 14px; line-height: 1.7; margin-top: 16px; }
 
-  .footer-logo {
-    display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
-  }
+  .footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
   .footer-logo-icon {
     width: 32px; height: 32px; background: var(--white);
     border-radius: 6px; display: flex; align-items: center; justify-content: center;
@@ -702,29 +656,24 @@
   .footer-logo-icon svg { width: 18px; height: 18px; }
 
   .footer-logo span {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; font-size: 16px; color: var(--white);
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 16px; color: var(--white);
   }
 
   .footer-col h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px; font-weight: 600;
-    text-transform: uppercase; letter-spacing: 1px;
-    color: var(--white); margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif; font-size: 14px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 16px;
   }
 
   .footer-col a {
-    display: block; font-size: 14px;
-    color: rgba(255,255,255,0.6); text-decoration: none;
-    margin-bottom: 10px; transition: color 0.2s;
+    display: block; font-size: 14px; color: rgba(255,255,255,0.6);
+    text-decoration: none; margin-bottom: 10px; transition: color 0.2s;
   }
   .footer-col a:hover { color: var(--white); }
 
   .footer-bottom {
     max-width: 1200px; margin: 0 auto; padding-top: 32px;
     border-top: 1px solid rgba(255,255,255,0.08);
-    display: flex; justify-content: space-between; align-items: center;
-    font-size: 14px;
+    display: flex; justify-content: space-between; align-items: center; font-size: 14px;
   }
   .footer-bottom span { color: rgba(255,255,255,0.4); }
 
@@ -733,8 +682,7 @@
     font-size: 12px; color: rgba(255,255,255,0.3);
   }
   .footer-tps svg {
-    width: 18px; height: 18px; stroke: rgba(255,255,255,0.2);
-    fill: none; stroke-width: 1.5;
+    width: 18px; height: 18px; stroke: rgba(255,255,255,0.2); fill: none; stroke-width: 1.5;
   }
 
   /* ── RESPONSIVE ─────────────────────────────── */
@@ -742,6 +690,9 @@
     .hero-inner { grid-template-columns: 1fr; }
     .hero-photo { display: none; }
     .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .featured-service { grid-template-columns: 1fr; text-align: center; }
+    .featured-icon { margin: 0 auto; }
+    .featured-content p { max-width: none; }
     .commercial-grid { grid-template-columns: 1fr; }
     .commercial-image { max-width: 480px; }
     .why-cards { grid-template-columns: repeat(2, 1fr); }
@@ -767,6 +718,7 @@
     .form-row-half { grid-template-columns: 1fr; }
     .contact-form { padding: 24px 20px 28px; }
     .form-header { padding: 20px; }
+    .featured-service { padding: 36px 24px; }
   }
 
   @media (max-width: 640px) {
@@ -786,7 +738,7 @@
     }
     .nav-hamburger { display: flex; }
     .hero-ctas { flex-direction: column; align-items: stretch; }
-    .btn-primary, .btn-outline { justify-content: center; }
+    .btn-primary { justify-content: center; }
   }
 </style>
 </head>
@@ -828,10 +780,6 @@
         <a href="tel:8130000000" class="btn-primary">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call (813) XXX-XXXX
-        </a>
-        <a href="/contact/" class="btn-outline">
-          Schedule Service
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
     </div>
@@ -899,6 +847,18 @@
     <p class="res-subtitle fade-up">Keeping Florida Homes Comfortable</p>
     <p class="res-desc fade-up">From emergency AC repair to full system replacement, our team delivers reliable comfort with clear communication and no surprises.</p>
 
+    <!-- Featured: New Construction -->
+    <div class="featured-service fade-up">
+      <div class="featured-badge">Featured</div>
+      <div class="featured-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      </div>
+      <div class="featured-content">
+        <h3>New Construction</h3>
+        <p>Complete HVAC system design and installation for new residential builds. We partner with builders, general contractors, and homeowners from the planning stage through final inspection — ensuring your new home has the right system, properly sized and installed from day one.</p>
+      </div>
+    </div>
+
     <div class="services-grid">
       <div class="service-card fade-up">
         <div class="service-card-icon">
@@ -921,7 +881,7 @@
           <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3>Preventive Maintenance</h3>
-        <p>Annual and semi-annual maintenance plans that extend system life, prevent breakdowns, and keep your warranty intact. Contact our office to get a tailored maintenance plan.</p>
+        <p>Annual and semi-annual maintenance plans that extend system life, prevent breakdowns, and keep your warranty intact. It's common for an annual maintenance contract to be required in order to process warranty claims.</p>
       </div>
 
       <div class="service-card fade-up">
@@ -963,6 +923,7 @@
         <p>Restaurateurs, retailers, and warehouse teams rely on properly running HVAC and refrigeration systems. Downtime can mean unexpected costs, operational downtime, and liability.</p>
 
         <div class="commercial-services-list">
+          <span class="commercial-tag">New Construction</span>
           <span class="commercial-tag">Commercial HVAC</span>
           <span class="commercial-tag">Walk-In Coolers</span>
           <span class="commercial-tag">Walk-In Freezers</span>
@@ -999,7 +960,7 @@
             <h3>Clear Communication</h3>
           </div>
           <div class="flip-card-back">
-            <p>You'll always know what's happening, what it costs, and when we'll be there. No surprises, no jargon.</p>
+            <p>You'll always know what's happening, what it costs, and when we'll be there.</p>
           </div>
         </div>
       </div>
@@ -1111,7 +1072,7 @@
           </a>
           <div class="contact-detail-item">
             <div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg></div>
-            <div><span class="detail-label">Hours</span><span class="detail-value">Mon–Fri 7am–6pm</span><br><span style="font-size:12px;color:var(--text-muted);">Emergency service 24/7</span></div>
+            <div><span class="detail-label">Hours</span><span class="detail-value">Mon–Fri 7am–5pm</span><br><span style="font-size:12px;color:var(--text-muted);">Emergency service 24/7</span></div>
           </div>
         </div>
       </div>
@@ -1147,6 +1108,7 @@
               <label for="service-type">Service Type <span class="required">*</span></label>
               <select id="service-type" name="service_type" required>
                 <option value="" disabled selected>Select one</option>
+                <option value="new-construction">New Construction</option>
                 <option value="residential-ac">Residential AC</option>
                 <option value="residential-heating">Residential Heating</option>
                 <option value="maintenance-plan">Maintenance Plan</option>
@@ -1206,6 +1168,7 @@
     </div>
     <div class="footer-col">
       <h4>Residential</h4>
+      <a href="/services/new-construction/">New Construction</a>
       <a href="/services/ac-installation/">AC Installation</a>
       <a href="/services/ac-repair/">AC Repair</a>
       <a href="/services/maintenance/">Maintenance Plans</a>
@@ -1215,6 +1178,7 @@
     </div>
     <div class="footer-col">
       <h4>Commercial</h4>
+      <a href="/services/commercial-new-construction/">New Construction</a>
       <a href="/services/commercial-hvac/">Commercial HVAC</a>
       <a href="/services/commercial-refrigeration/">Refrigeration</a>
       <a href="/services/commercial-maintenance/">Maintenance</a>
